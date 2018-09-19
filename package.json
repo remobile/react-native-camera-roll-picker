@@ -1,6 +1,6 @@
 {
     "name": "@remobile/react-native-camera-roll-picker",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "A React Native component providing images selection from camera roll",
     "main": "index.js",
     "author": {

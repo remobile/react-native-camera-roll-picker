@@ -84,7 +84,7 @@ class CameraRollPicker extends Component {
     }
 
     render () {
-        const { dataSource } = this.state;
+        const { dataSource, images } = this.state;
         const {
             scrollRenderAheadDistance,
             initialListSize,
@@ -108,7 +108,7 @@ class CameraRollPicker extends Component {
                 dataSource={dataSource}
                 renderRow={rowData => this._renderRow(rowData)} />
         ) : (
-            <Text style={[{ textAlign: 'center' }, emptyTextStyle]}>{emptyText}</Text>
+            this._renderImage(images[0])
         );
 
         return (
